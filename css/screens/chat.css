@@ -55,11 +55,27 @@
     margin-bottom: 25px;
 }
 
+@keyframes avatarScale {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: none;
+    }
+}
+
 .message-row img {
     width: 50px;
     height: 50px;
     border-radius: 45%;
     margin-right: 13px;
+}
+
+.message-row img:hover {
+    animation: avatarScale 1s ease-in-out infinite;
 }
 
 .message__author{
@@ -81,6 +97,10 @@
     border-radius: 15px;
     border-top-left-radius: 0px;
     margin-right: 5px;
+}
+
+.message__bubble:hover {
+    animation: avatarScale 1s ease-in-out infinite;
 }
 
 .message__time {
