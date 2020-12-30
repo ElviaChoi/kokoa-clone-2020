@@ -16,17 +16,17 @@
 }
 
 .sceen-header__icons-find {
-    display: block;
+    display: inline;
     position: relative;
-    margin-top: 20px;
+    margin-right: -40px;
 }
     
 .sceen-header__icons-dot{
     color: tomato;
     font-size: 40px;
-    position: absolute;
-    top: -40px;
-    right: -8px;
+    position: relative;
+    right: -13px;
+    bottom: 19px;
 }
 
 @keyframes rotateCog {
